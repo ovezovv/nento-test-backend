@@ -13,7 +13,7 @@ export const Init = () => {
     express.urlencoded({ extended: true }),
     router
   );
-  app.listen(process.env.PORT, () => logger.log("info", `Server running at http://localhost:${process.env.PORT}`));
+  app.listen(8000, () => logger.log("info", `Server running at http://localhost:8000`));
 
   return app;
 };
